@@ -5,7 +5,12 @@ var a = 0; /* não alterar o nome */
 var b = 0; /* não alterar o nome */
 
 var c = 0;
-/* BOTÃO IN/OUT */
+
+// ERRO
+var Erro1 = document.getElementById('erro');
+var Erro2 = document.getElementById('Erro');
+
+/* BOTÃO MAIN MENU */
 var MainMenu = document.getElementById('btn-MainMenu');
 var MainMenuOpen = document.querySelector('.e6_59');
 var MainMenuColor = document.querySelector('.e5_125');
@@ -14,6 +19,7 @@ var MainMenuColor = document.querySelector('.e5_125');
 var btn = document.getElementById('btn-InOut');
 var InOutOpen = document.querySelector('.e6_58');
 var InOutColor = document.querySelector('.e5_104');
+
 /* BOTÃO CONTROL */
 var Control = document.getElementById('btn-control');
 var ControlOpen = document.querySelector('.group_30_203_3');
@@ -26,11 +32,28 @@ var DeviceColor = document.querySelector('.e6_27');
 
 /* BOTÃO MOTION */
 var Motion = document.getElementById('btn-motion');
-var MotionOpen = document.querySelector('.br_motion_205_148');
+var MotionOpen = document.querySelector('.group_92_211_2');
 var MotionColor = document.querySelector('.e6_31');
+
+/* BOTÃO ARITH */
+var Arith = document.getElementById('btn-arith');
+var ArithOpen = document.querySelector('.bt_arith_205_148');
+var ArithColor = document.querySelector('.e6_37');
+
+/* BOTÃO SHIFT */
+var Shift = document.getElementById('btn-shift');
+var ShiftOpen = document.querySelector('.group_30_208_43');
+var ShiftColor = document.querySelector('.e6_41');
+
+/* BOTÃO OTHER */
+var Other = document.getElementById('btn-other');
+var OtherOpen = document.querySelector('.other_209_86');
+var OtherColor = document.querySelector('.e6_46');
+
 
 
 //FUNCÕES
+
 function main(varOn,varColor) {
       if(varOn.style.display === 'block' &&  a === 1 && b === 0) {
             varOn.style.display = 'none';
@@ -40,6 +63,8 @@ function main(varOn,varColor) {
             varOn.style.display = 'block';
             varColor.style.background = 'rgba(118.30300390720367, 96.05002999305725, 255, 1)';
             a = 1
+        }else if(varOn.style.display === 'block' &&  a === 1 && b ===1){
+            alert("Desative os Botões...");
         }
 }
 function IfandElse(varOn,varColor) {
@@ -53,8 +78,15 @@ function IfandElse(varOn,varColor) {
             b = 1
         }
 }
+/* BOTÃO EM BREVE... */
+Erro1.addEventListener('click', function() {
+      alert("EM BREVE...");
+});
+Erro2.addEventListener('click', function() {
+      alert("EM BREVE...");
+});
 
-/* BOTÃO IN/OUT */
+/* BOTÃO MAIN MENU */
 MainMenu.addEventListener('click', function() {
       main(MainMenuOpen,MainMenuColor)
 });
@@ -72,7 +104,23 @@ Control.addEventListener('click', function() {
 Device.addEventListener('click', function() {
       IfandElse(DeviceOpen,DeviceColor)
 });
-/* BOTÃO DEVICE */
+
+/* BOTÃO MOTION */
 Motion.addEventListener('click', function() {
       IfandElse(MotionOpen,MotionColor)
+});
+
+/* BOTÃO ARITH */
+Arith.addEventListener('click', function() {
+      IfandElse(ArithOpen,ArithColor)
+});
+
+/* BOTÃO SHIFT */
+Shift.addEventListener('click', function() {
+      IfandElse(ShiftOpen,ShiftColor)
+});
+
+/* BOTÃO OTHER */
+Other.addEventListener('click', function() {
+      IfandElse(OtherOpen,OtherColor)
 });
