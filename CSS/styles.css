@@ -9,7 +9,6 @@
   	-ms-user-select: none;
    	user-select: none;
 	zoom: 0.65 /* Coloca o zoom em 65% */
-	
 }
 
 button{
@@ -28,7 +27,6 @@ button{
 }
 .e5_99 { 
 	background-color:rgba(255, 255, 255, 1);
-	
 	position:absolute;
 	left:0px;
 	top:0px;
