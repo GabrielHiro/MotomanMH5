@@ -6,9 +6,13 @@ var b = 0; /* não alterar o nome */
 
 var c = 0;
 
+var d = 0;
+
 // ERRO
 var Erro1 = document.getElementById('erro');
 var Erro2 = document.getElementById('Erro');
+var Erro3 = document.getElementById('Erro3');
+var Erro4 = document.getElementById('Erro4');
 
 /* BOTÃO MAIN MENU */
 var MainMenu = document.getElementById('btn-MainMenu');
@@ -52,6 +56,16 @@ var OtherColor = document.querySelector('.e6_46');
 
 
 
+/* BOTÃO JOBB */
+var Job = document.getElementById('btn_job');
+var JobOpen = document.querySelector('.bt_job_218_27');
+var JobColor = document.querySelector('.e6_60');
+
+/* BOTÃO JOBB */
+var Edit = document.getElementById('btn_edit');
+var EditOpen = document.querySelector('.bt_edit_219_50');
+var EditColor = document.querySelector('.e6_61');
+
 //FUNCÕES
 
 function main(varOn,varColor) {
@@ -67,6 +81,7 @@ function main(varOn,varColor) {
             alert("Desative os Botões...");
         }
 }
+
 function IfandElse(varOn,varColor) {
       if(varOn.style.display === 'block' &&  b === 1) {
             varOn.style.display = 'none';
@@ -78,6 +93,19 @@ function IfandElse(varOn,varColor) {
             b = 1
         }
 }
+function IfandElse1(varOn,varColor) {
+      if(varOn.style.display === 'block' &&  d === 1) {
+            varOn.style.display = 'none';
+            varColor.style.background = 'rgba(104.12499949336052, 103.95144760608673, 103.95144760608673, 1)';
+            d = 0;
+        } else if(d === 0){
+            varOn.style.display = 'block';
+            varColor.style.background = 'rgba(118.30300390720367, 96.05002999305725, 255, 1)';
+            d = 1
+        }
+}
+
+
 /* BOTÃO EM BREVE... */
 Erro1.addEventListener('click', function() {
       alert("EM BREVE...");
@@ -85,6 +113,13 @@ Erro1.addEventListener('click', function() {
 Erro2.addEventListener('click', function() {
       alert("EM BREVE...");
 });
+Erro3.addEventListener('click', function() {
+      alert("EM BREVE...");
+});
+Erro4.addEventListener('click', function() {
+      alert("EM BREVE...");
+});
+
 
 /* BOTÃO MAIN MENU */
 MainMenu.addEventListener('click', function() {
@@ -123,4 +158,14 @@ Shift.addEventListener('click', function() {
 /* BOTÃO OTHER */
 Other.addEventListener('click', function() {
       IfandElse(OtherOpen,OtherColor)
+});
+
+/* BOTÃO JOBB */
+Job.addEventListener('click', function() {
+      IfandElse1(JobOpen,JobColor)
+});
+
+/* BOTÃO EDIT */
+Edit.addEventListener('click', function() {
+      IfandElse1(EditOpen,EditColor)
 });
