@@ -1,0 +1,42 @@
+
+/* INFOS IN OUT */
+.infos_220_4 { 
+	background-color:rgba(73.36333975195885, 73.36333975195885, 73.36333975195885, 1);
+	width:333px;
+	height:471px;
+	border-radius:20px;
+	border-top-right-radius: 0px;
+	position:absolute;
+	left:905px;
+	top:221px;
+	display: none;
+}
+.informa__es__221_5 { 
+	color:rgba(255, 255, 255, 1);
+	width:153px;
+	height:31px;
+	position:absolute;
+	left:11px;
+	top:12px;
+	font-family:Alatsi;
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
+}
+.a_220_3 { 
+	color:rgba(255, 255, 255, 1);
+	width:311px;
+	height:408px;
+	position:absolute;
+	left:11px;
+	top:51px;
+	font-family:Alatsi;
+	text-align:left;
+	font-size:16px;
+	word-spacing:0.3rem;
+	letter-spacing:0.1rem;
+}
+
+#cor-texto{
+	color:rgb(0, 255, 217);
+}

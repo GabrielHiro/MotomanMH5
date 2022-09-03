@@ -4,9 +4,9 @@ var a = 0; /* não alterar o nome */
 
 var b = 0; /* não alterar o nome */
 
-var c = 0;
+var c = 0; /* não alterar o nome */
 
-var d = 0;
+var d = 0; /* não alterar o nome */
 
 // ERRO
 var Erro1 = document.getElementById('erro');
@@ -23,6 +23,8 @@ var MainMenuColor = document.querySelector('.e5_125');
 var btn = document.getElementById('btn-InOut');
 var InOutOpen = document.querySelector('.e6_58');
 var InOutColor = document.querySelector('.e5_104');
+var InOutInfos = document.querySelector('.infos_220_4');
+
 
 /* BOTÃO CONTROL */
 var Control = document.getElementById('btn-control');
@@ -104,6 +106,15 @@ function IfandElse1(varOn,varColor) {
             d = 1
         }
 }
+function MouseSee(varOn) {
+      if(varOn.style.display === 'block' &&  c === 1){
+            varOn.style.display = 'none';
+            c = 0;
+        } else if(c === 0){
+            varOn.style.display = 'block';
+            c = 1
+        }
+}
 
 
 /* BOTÃO EM BREVE... */
@@ -132,7 +143,7 @@ btn.addEventListener('click', function() {
 
 /* BOTÃO CONTROL */
 Control.addEventListener('click', function() {
-      IfandElse(ControlOpen,ControlColor)
+
 });
 
 /* BOTÃO DEVICE */
@@ -160,6 +171,8 @@ Other.addEventListener('click', function() {
       IfandElse(OtherOpen,OtherColor)
 });
 
+// BOTÕES SUPERIOR
+
 /* BOTÃO JOBB */
 Job.addEventListener('click', function() {
       IfandElse1(JobOpen,JobColor)
@@ -168,4 +181,13 @@ Job.addEventListener('click', function() {
 /* BOTÃO EDIT */
 Edit.addEventListener('click', function() {
       IfandElse1(EditOpen,EditColor)
+});
+
+// INFORMAÇÕES BOTÕES
+
+btn.addEventListener('mouseover', function() {
+      MouseSee(InOutInfos)
+});
+btn.addEventListener('mouseout', function() {
+      MouseSee(InOutInfos)
 });
