@@ -1,0 +1,32 @@
+
+body { 
+    background-color:rgba(81.86794459819794, 81.86794459819794, 81.86794459819794, 1);
+    -webkit-user-select: none;
+ 	-moz-user-select: -moz-none;
+  	-ms-user-select: none;
+   	user-select: none;
+	zoom: 0.45; /* Coloca o zoom em 65% */
+    text-align: center;
+}
+.em_breve____226_3 { 
+	color:rgba(255, 255, 255, 1);
+	width:640px;
+	height:123px;
+	position:relative;
+	top:125px;
+	font-family:Alatsi;
+	text-align:center;
+	font-size:96px;
+	letter-spacing:0;
+}
+.a_vers_o_para_smartphone_n_o_esta_disponivel_no_momento__226_4 { 
+	color:rgba(255, 255, 255, 1);
+	width:622px;
+	height:117px;
+	position:relative;
+	top:266px;
+	font-family:Alatsi;
+	text-align:center;
+	font-size:36px;
+	letter-spacing:0;
+}
