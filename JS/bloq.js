@@ -10,5 +10,5 @@
     window.location = b;
 })(
   navigator.userAgent || navigator.vendor || window.opera,
-  "http://192.168.1.2:5500/1,4/bloqueador.html"
+  alert('EM BREVE... PARA SMARTPHONE.');
 );
