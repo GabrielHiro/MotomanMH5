@@ -3,13 +3,19 @@
 .infos_220_4 { 
 	background-color:rgba(73.36333975195885, 73.36333975195885, 73.36333975195885, 1);
 	width:333px;
-	height:471px;
+	height:381px;
 	border-radius:20px;
 	border-top-right-radius: 0px;
 	position:absolute;
 	left:905px;
 	top:221px;
 	display: none;
+}
+.info { 
+	background-color:rgba(73.36333975195885, 73.36333975195885, 73.36333975195885, 1);
+	border-radius:20px;
+	border-top-right-radius: 0px;
+	position:absolute;
 }
 .informa__es__221_5 { 
 	color:rgba(255, 255, 255, 1);
