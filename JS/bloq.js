@@ -10,5 +10,5 @@
     window.location = b;
 })(
   navigator.userAgent || navigator.vendor || window.opera,
-  alert('EM BREVE... PARA SMARTPHONE.');
+  "http://detectmobilebrowser.com/mobile"
 );
