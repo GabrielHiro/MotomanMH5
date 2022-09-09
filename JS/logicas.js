@@ -8,6 +8,8 @@ var c = 0; /* não alterar o nome */
 
 var d = 0; /* não alterar o nome */
 
+var f = 0; /* não alterar o nome */
+
 
 // INTERTRAVAMENTO ENTRE OS BOTÕES
 
@@ -142,14 +144,14 @@ function IfandElse1(varOn,varColor) {
 
 function Inflisten(varOn,varColor) {
       
-      if(varOn.style.display === 'block' ||  b === 1) {
+      if(varOn.style.display === 'block' ||  f === 1) {
             varOn.style.display = 'none';
             varColor.style.background = 'rgba(104.12499949336052, 103.95144760608673, 103.95144760608673, 1)';
-            b = 0;
+            f = 0;
         } else{
             varOn.style.display = 'block';
             varColor.style.background = 'rgba(0, 255, 86.69997811317444, 1)';
-            b = 1;
+            f = 1;
         }
 }
 
