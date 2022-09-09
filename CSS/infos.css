@@ -1,9 +1,10 @@
 
 /* INFOS IN OUT */
+
 .infos_220_4 { 
 	background-color:rgba(73.36333975195885, 73.36333975195885, 73.36333975195885, 1);
 	width:333px;
-	height:381px;
+	height:190px;
 	border-radius:20px;
 	border-top-right-radius: 0px;
 	position:absolute;
@@ -11,31 +12,95 @@
 	top:221px;
 	display: none;
 }
-.info { 
+
+.infos_dout{
 	background-color:rgba(73.36333975195885, 73.36333975195885, 73.36333975195885, 1);
+	width:333px;
+	height:180px;
 	border-radius:20px;
 	border-top-right-radius: 0px;
 	position:absolute;
+	left:715px;
+	top:221px;
+	display: none;
 }
-.informa__es__221_5 { 
-	color:rgba(255, 255, 255, 1);
+
+.infos_wait{
+	background-color:rgba(73.36333975195885, 73.36333975195885, 73.36333975195885, 1);
+	width:333px;
+	height:180px;
+	border-radius:20px;
+	border-top-right-radius: 0px;
+	position:absolute;
+	left:715px;
+	top:352px;
+	display: none;
+}
+
+/* repet */
+
+/* titulo */
+.informacoes { 
+	color:rgb(0, 255, 217);
 	width:153px;
 	height:31px;
 	position:absolute;
 	left:11px;
-	top:12px;
+	top:10px;
 	font-family:Alatsi;
 	text-align:left;
 	font-size:24px;
 	letter-spacing:0;
 }
+
+/* subtitulo */
+
+.subtlInout{
+	color:rgb(0, 255, 217);
+	width:153px;
+	height:31px;
+	position:absolute;
+	left:11px;
+	top:41px;
+	font-family:Alatsi;
+	text-align:left;
+	font-size:22px;
+	letter-spacing:0;
+}
+.subtl{
+	color:rgb(0, 255, 217);
+	width:153px;
+	height:31px;
+	position:absolute;
+	left:11px;
+	top:48px;
+	font-family:Alatsi;
+	text-align:left;
+	font-size:22px;
+	letter-spacing:0;
+}
+
+.subtl-wait{
+	color:rgb(0, 255, 217);
+	width:153px;
+	height:31px;
+	position:absolute;
+	left:11px;
+	top: -10px;
+	font-family:Alatsi;
+	text-align:left;
+	font-size:22px;
+	letter-spacing:0;
+}
+
+/* texto */
 .a_220_3 { 
 	color:rgba(255, 255, 255, 1);
 	width:311px;
 	height:408px;
 	position:absolute;
 	left:11px;
-	top:51px;
+	top:65px;
 	font-family:Alatsi;
 	text-align:left;
 	font-size:16px;
@@ -43,6 +108,17 @@
 	letter-spacing:0.1rem;
 }
 
-#cor-texto{
-	color:rgb(0, 255, 217);
+.inoutText { 
+	color:rgba(255, 255, 255, 1);
+	width:311px;
+	height:408px;
+	position:absolute;
+	left:11px;
+	top:75px;
+	font-family:Alatsi;
+	text-align:left;
+	font-size:16px;
+	word-spacing:0.3rem;
+	letter-spacing:0.1rem;
 }
+

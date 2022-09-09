@@ -11,6 +11,8 @@
   <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
 
   <script defer src="JS/logicas.js"></script>
+  <script defer src="JS/infos.js"></script>
+  <link rel="stylesheet" href="CSS/btn4.css">
   <link rel="stylesheet" href="CSS/styles.css">
   <link rel="stylesheet" href="CSS/btn_sup.css">
   <link rel="stylesheet" href="CSS/infos.css">
@@ -33,11 +35,19 @@
         <div class=e5_99>
           <div class="e5_100"></div><!-- Fundo Principal-->
           <div class="e12_37"></div><!-- Fundo Botão esquerdo -->
-          <div class="e5_119"></div><!-- Botão inferior Simples -->
+          <div class="barra-inferior-4btn">
+            <div class="e5_119"></div><!-- Botão inferior Simples -->
+            <div class="e5_121"></div><!-- Botão inferior Simples -->
+            <div class="e5_122"></div><!-- Botão inferior Simples -->
+            <div class="e5_123"></div><!-- Botão inferior Simples -->
+          </div>
+          <div class="barra-inferior-4btn-on">
+            <div class="e5_119-b" id="ajuste"></div><!-- Botão inferior Simples -->
+            <div class="e5_121-b"></div><!-- Botão inferior Simples -->
+            <div class="e5_122-b"></div><!-- Botão inferior Simples -->
+            <div class="e5_123-b"></div><!-- Botão inferior Simples -->
+          </div>
           <div class="e5_120"></div><!-- Botão inferior GRANDE -->
-          <div class="e5_121"></div><!-- Botão inferior Simples -->
-          <div class="e5_122"></div><!-- Botão inferior Simples -->
-          <div class="e5_123"></div><!-- Botão inferior Simples -->
           <div class=e6_59>
             <div class="e5_101"></div><!-- Botoes Lateral esquerda - MAIN MENU -->
             <div class=e6_4>
@@ -128,45 +138,47 @@
             </div>
           </div>
           <div class="lt-esq">
-            <div class=e8_83>
-              <div class="e5_133"></div><span class="e6_68">JOB</span>
-            </div>
-            <div class=e12_25>
-              <div class=e8_84>
-                <div class="e8_85"></div><span class="e8_86">GENERAL</span>
+            <div class="Slide">
+              <div class=e8_83>
+                <div class="e5_133"></div><span class="e6_68">JOB</span>
+              </div>
+              <div class=e12_25>
+                <div class=e8_84>
+                  <div class="e8_85"></div><span class="e8_86">GENERAL</span>
+                </div>
+              </div>
+              <div class=e12_26>
+                <div class="e5_131"></div><span class="e12_7">VARIABLE</span>
+              </div>
+              <div class=e12_27>
+                <div class="e5_130"></div><span class="e12_8">IN / OUT</span>
+              </div>
+              <div class=e12_28>
+                <div class="e5_129"></div><span class="e12_9">ROBOT</span>
+              </div>
+              <div class=e12_29>
+                <div class="e5_128"></div><span class="e12_10">SYSTEM</span><span class="e12_11">INFO</span>
               </div>
             </div>
-            <div class=e12_26>
-              <div class="e5_131"></div><span class="e12_7">VARIABLE</span>
-            </div>
-            <div class=e12_27>
-              <div class="e5_130"></div><span class="e12_8">IN / OUT</span>
-            </div>
-            <div class=e12_28>
-              <div class="e5_129"></div><span class="e12_9">ROBOT</span>
-            </div>
-            <div class=e12_29>
-              <div class="e5_128"></div><span class="e12_10">SYSTEM</span><span class="e12_11">INFO</span>
-            </div>
-          </div>
-          <div class=e12_31>
-            <!-- BOTAO SETA -->
-            <button id="Erro3">
-              <div class="e5_126"></div>
-              <div class=e105_65>
-                <img id="img1" src="img/pngwing.com (2).png" alt="">
-                <div class="e12_21"></div>
-              </div>
-            </button>
-          </div>
-          <div class=e12_30>
-            <button id="Erro4">
+            <div class=e12_31>
               <!-- BOTAO SETA -->
-              <div class="e5_127"></div>
-              <div class=e105_64>
-                <img id="img2" src="img/pngwing.com (2).png" alt="">
-              </div>
-            </button>
+              <button id="Erro3">
+                <div class="e5_126"></div>
+                <div class=e105_65>
+                  <img id="img1" src="img/pngwing.com (2).png" alt="">
+                  <div class="e12_21"></div>
+                </div>
+              </button>
+            </div>
+            <div class=e12_30>
+              <button id="Erro4">
+                <!-- BOTAO SETA -->
+                <div class="e5_127"></div>
+                <div class=e105_64>
+                  <img id="img2" src="img/pngwing.com (2).png" alt="">
+                </div>
+              </button>
+            </div>
           </div>
           <div class=e14_4>
             <div class="e5_125"></div>
@@ -187,6 +199,14 @@
               </div>
             </div>
           </div>
+            <div class=e10_281>
+              <button id="InformList">
+              <div class="e1_67"></div>
+                <span class="e9_268">INFORM</span>
+                <span class="e9_274">LIST</span>
+              <div class="e9_275"></div>
+            </button>
+            </div>
           <!-- BOTÃO IN/OUT -->
           <div class="e6_58">
             <div class="e5_102"></div>
@@ -514,17 +534,29 @@
               <div class="rectangle_118_219_68"></div><span class="enable_speed_219_69">ENABLE SPEED</span>
             </div>
           </div>
-          <!-- INFOS IO OUT -->
-          <div class=infos_220_4><span class="informa__es__221_5" id="cor-texto">INFORMAÇÕES:</span>
-            <span class="a_220_3"> ABERTA A " INFORM LIST" <br> <br>SELECIONE O QUE DESEJA FAZER <br> <br> DESIGNAR UMA
-              SAIDA OU ENTRADA <br><br> <span id="cor-texto">WAIT </span> <br> Comando para a espera do robo: <br> ROBO
-              fica estatico até algum comando ou processo concluido <br> <br> <span id="cor-texto">DOUT OT</span> <br>
-              Comando para designar a abertura ou fechadura da garra: <br>ROBO Executa a tarefa designada na aba de
-              comandos</span>
+          <!-- INFOS IN OUT -->
+          <div class=infos_220_4>
+            <span class="informacoes">INFORMAÇÕES:</span>
+            <span class="subtlInout">IN / OUT</span>
+            <span class="inoutText"> Aberta a " INFORM LIST" <br> <br>Selecione o que deseja fazer <br> <br> Designar
+              uma saida ou entrada
+          </div>
+          <div class=infos_dout>
+            <span class="informacoes">INFORMAÇÕES:</span>
+            <span class="subtl">DOUT OT</span>
+            <span class="a_220_3"> <br> Comando para designar a abertura ou fechadura da garra: <br>ROBO Executa a
+              tarefa designada na aba de comandos</span>
+          </div>
+
+          <div class=infos_wait>
+            <span class="informacoes">INFORMAÇÕES:</span>
+            <span class="subtl-wait"><br><br>WAIT </span>
+            <span class="a_220_3"><br> Comando para a espera do robo: <br> ROBO fica estatico até algum comando ou
+              processo concluido comandos</span>
           </div>
           <div class="info"><span>
 
-          </span></div>
+            </span></div>
         </div>
       </div>
     </div>

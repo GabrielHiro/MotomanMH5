@@ -21,13 +21,22 @@ var ColorSup;//Botões Superior
 // ERRO
 var Erro1 = document.getElementById('erro');
 var Erro2 = document.getElementById('Erro');
+
+var Setaesq = document.getElementById('Slide');
 var Erro3 = document.getElementById('Erro3');
 var Erro4 = document.getElementById('Erro4');
 
 /* BOTÃO MAIN MENU */
 var MainMenu = document.getElementById('btn-MainMenu');
-var MainMenuOpen = document.querySelector('.e6_59');
+var MainMenuOpen = document.querySelector('.lt-esq');
+var MainMenuOpenFundo = document.querySelector('.e12_37');
 var MainMenuColor = document.querySelector('.e5_125');
+var MainMenuBTN4On = document.querySelector('.barra-inferior-4btn-on');
+var MainMenuBTN4 = document.querySelector('.barra-inferior-4btn');
+
+var InfList = document.getElementById('InformList');
+var InfListOpen = document.querySelector('.e6_59');
+var InfListColor = document.querySelector('.e9_275');
 
 /* BOTÃO IN/OUT */
 var btn = document.getElementById('btn-InOut');
@@ -80,17 +89,21 @@ var EditColor = document.querySelector('.e6_61');
 
 //FUNCÕES
 
-function main(varOn,varColor) {
-      if(varOn.style.display === 'block' &&  a === 1 && b === 0 ) {
+function main(varOn,varFundo,varColor,Btn4on,Btn4) {
+      if(varOn.style.display === 'block' &&  a === 1 ) {
             varOn.style.display = 'none';
+            varFundo.style.display = 'none';
+            Btn4.style.display = 'none';
+            Btn4on.style.display = 'Block';
             varColor.style.background = 'rgba(104.12499949336052, 103.95144760608673, 103.95144760608673, 1)';
             a = 0;
         } else if(a === 0){
             varOn.style.display = 'block';
+            varFundo.style.display = 'block';
+            Btn4.style.display = 'block';
+            Btn4on.style.display = 'none';
             varColor.style.background = 'rgba(118.30300390720367, 96.05002999305725, 255, 1)';
             a = 1
-        }else if(varOn.style.display === 'block' &&  a === 1 ){
-            alert("Desative os Botões...");
         }
 }
 
@@ -118,24 +131,28 @@ function IfandElse1(varOn,varColor) {
             OpenSup.style.display = 'none';
             ColorSup.style.background = 'rgba(104.12499949336052, 103.95144760608673, 103.95144760608673, 1)';
             d = 0;
-        } else{
+        } else if ( d === 0){
             varOn.style.display = 'block';
             varColor.style.background = 'rgba(118.30300390720367, 96.05002999305725, 255, 1)';
-            d = 1
+            d = 1;
             OpenSup = varOn;
             ColorSup = varColor;
         }
 }
 
-function MouseSee(varOn) {
-      if(varOn.style.display === 'block' &&  c === 1){
+function Inflisten(varOn,varColor) {
+      
+      if(varOn.style.display === 'block' ||  b === 1) {
             varOn.style.display = 'none';
-            c = 0;
-        } else if(c === 0){
+            varColor.style.background = 'rgba(104.12499949336052, 103.95144760608673, 103.95144760608673, 1)';
+            b = 0;
+        } else{
             varOn.style.display = 'block';
-            c = 1
+            varColor.style.background = 'rgba(0, 255, 86.69997811317444, 1)';
+            b = 1;
         }
 }
+
 
 
 /* BOTÃO EM BREVE... */
@@ -146,7 +163,7 @@ Erro2.addEventListener('click', function() {
       alert("EM BREVE...");
 });
 Erro3.addEventListener('click', function() {
-      alert("EM BREVE...");
+      Setas(Setaesq,MainMenu);
 });
 Erro4.addEventListener('click', function() {
       alert("EM BREVE...");
@@ -155,11 +172,16 @@ Erro4.addEventListener('click', function() {
 
 /* BOTÃO MAIN MENU */
 MainMenu.addEventListener('click', function() {
-      main(MainMenuOpen,MainMenuColor)
+      main(MainMenuOpen,MainMenuOpenFundo,MainMenuColor,MainMenuBTN4On,MainMenuBTN4)
 });
 /* BOTÃO IN/OUT */
 btn.addEventListener('click', function() {
       IfandElse(InOutOpen,InOutColor)
+});
+
+/* BOTÃO IN/OUT */
+InfList.addEventListener('click', function() {
+      Inflisten(InfListOpen,InfListColor)
 });
 
 /* BOTÃO CONTROL */
@@ -204,11 +226,5 @@ Edit.addEventListener('click', function() {
       IfandElse1(EditOpen,EditColor)
 });
 
-// INFORMAÇÕES BOTÕES
 
-btn.addEventListener('mouseover', function() {
-      MouseSee(InOutInfos)
-});
-btn.addEventListener('mouseout', function() {
-      MouseSee(InOutInfos)
-});
+
