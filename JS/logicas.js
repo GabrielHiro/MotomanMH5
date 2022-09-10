@@ -10,6 +10,9 @@ var d = 0; /* não alterar o nome */
 
 var f = 0; /* não alterar o nome */
 
+var g = 0; /* não alterar o nome */
+
+var h = 0; /* não alterar o nome */
 
 // INTERTRAVAMENTO ENTRE OS BOTÕES
 
@@ -17,6 +20,10 @@ var Open;//Botões MAIN MENU
 var Color;//Botões MAIN MENU
 var OpenSup;//Botões Superior
 var ColorSup;//Botões Superior
+
+var OpenMN;//Botões Superior
+var ColorMN;//Botões Superior
+
 
 // INICIO VAR DOS BOTÕES MAIN MENU
 
@@ -35,6 +42,9 @@ var MainMenuOpenFundo = document.querySelector('.e12_37');
 var MainMenuColor = document.querySelector('.e5_125');
 var MainMenuBTN4On = document.querySelector('.barra-inferior-4btn-on');
 var MainMenuBTN4 = document.querySelector('.barra-inferior-4btn');
+
+
+// INFORM LIST
 
 var InfList = document.getElementById('InformList');
 var InfListOpen = document.querySelector('.e6_59');
@@ -89,143 +99,203 @@ var Edit = document.getElementById('btn_edit');
 var EditOpen = document.querySelector('.bt_edit_219_50');
 var EditColor = document.querySelector('.e6_61');
 
+
+//BOTÃO MAIN MENU
+
+var JobMN = document.getElementById('btn_job_MN');
+var JobMNOpen = document.querySelector('.btn_job_228_4');
+var JobMNColor = document.querySelector('.e5_133');
+
+var createrjob = document.getElementById('creater-job');
+var CreateOpen = document.querySelector('.group_96_229_38');
+var Cancel = document.getElementById('cancel');
+var Execute = document.getElementById('executer');
 //FUNCÕES
 
-function main(varOn,varFundo,varColor,Btn4on,Btn4) {
-      if(varOn.style.display === 'block' &&  a === 1 ) {
+function main(varOn, varFundo, varColor, Btn4on, Btn4) {
+      if (varOn.style.display === 'block' && a === 1 && h === 0) {
             varOn.style.display = 'none';
             varFundo.style.display = 'none';
             Btn4.style.display = 'none';
             Btn4on.style.display = 'Block';
-            varColor.style.background = 'rgba(104.12499949336052, 103.95144760608673, 103.95144760608673, 1)';
+            varColor.style.background = 'rgba(104.1249994936052, 103.95144760608673, 103.95144760608673, 1)';
+            if (g === 1) {
+                  BtnMain(OpenMN,ColorMN)
+            }
             a = 0;
-        } else if(a === 0){
+      } else if (a === 0) {
             varOn.style.display = 'block';
             varFundo.style.display = 'block';
             Btn4.style.display = 'block';
             Btn4on.style.display = 'none';
             varColor.style.background = 'rgba(118.30300390720367, 96.05002999305725, 255, 1)';
             a = 1
-        }
+      }
 }
 
-function IfandElse(varOn,varColor) {
-      
-      if(varOn.style.display === 'block' ||  b === 1) {
+function IfandElse(varOn, varColor) {
+
+      if (varOn.style.display === 'block' || b === 1) {
             varOn.style.display = 'none';
             varColor.style.background = 'rgba(104.12499949336052, 103.95144760608673, 103.95144760608673, 1)';
             Open.style.display = 'none';
             Color.style.background = 'rgba(104.12499949336052, 103.95144760608673, 103.95144760608673, 1)';
             b = 0;
-        } else{
+      } else {
             varOn.style.display = 'block';
             varColor.style.background = 'rgba(118.30300390720367, 96.05002999305725, 255, 1)';
             b = 1;
             Open = varOn;
             Color = varColor;
-        }
+      }
 }
 
-function IfandElse1(varOn,varColor) {
-      if(varOn.style.display === 'block' ||  d === 1) {
+function IfandElse1(varOn, varColor) {
+      if (varOn.style.display === 'block' || d === 1) {
             varOn.style.display = 'none';
             varColor.style.background = 'rgba(104.12499949336052, 103.95144760608673, 103.95144760608673, 1)';
             OpenSup.style.display = 'none';
             ColorSup.style.background = 'rgba(104.12499949336052, 103.95144760608673, 103.95144760608673, 1)';
             d = 0;
-        } else if ( d === 0){
+      } else if (d === 0) {
             varOn.style.display = 'block';
             varColor.style.background = 'rgba(118.30300390720367, 96.05002999305725, 255, 1)';
             d = 1;
             OpenSup = varOn;
             ColorSup = varColor;
-        }
+      }
 }
 
-function Inflisten(varOn,varColor) {
-      
-      if(varOn.style.display === 'block' ||  f === 1) {
+function Inflisten(varOn, varColor) {
+
+      if (varOn.style.display === 'block' || f === 1) {
             varOn.style.display = 'none';
             varColor.style.background = 'rgba(104.12499949336052, 103.95144760608673, 103.95144760608673, 1)';
             f = 0;
-        } else{
+      } else {
             varOn.style.display = 'block';
             varColor.style.background = 'rgba(0, 255, 86.69997811317444, 1)';
             f = 1;
-        }
+      }
+}
+
+function BtnMain(varOn, varColor) {
+      if (varOn.style.display === 'block' || g === 1 ) {
+            varOn.style.display = 'none';
+            varColor.style.background = 'rgba(104.12499949336052, 103.95144760608673, 103.95144760608673, 1)';
+            OpenMN.style.display = 'none';
+            ColorMN.style.background = 'rgba(104.12499949336052, 103.95144760608673, 103.95144760608673, 1)';
+            g = 0;
+      } else if (g === 0 && h === 0) {
+            varOn.style.display = 'block';
+            varColor.style.background = 'rgba(118.30300390720367, 96.05002999305725, 255, 1)';
+            g = 1;
+            OpenMN = varOn;
+            ColorMN = varColor;
+      }
+}
+
+function create(varOn){
+      if (varOn.style.display === 'block' || h === 1) {
+            varOn.style.display = 'none';
+            h = 0;
+      }
+      else if (h === 0) {
+            varOn.style.display = 'block';
+            h = 1;
+            BtnMain(JobMNOpen, JobMNColor)
+      }
 }
 
 
 
 /* BOTÃO EM BREVE... */
-Erro1.addEventListener('click', function() {
+Erro1.addEventListener('click', function () {
       alert("EM BREVE...");
 });
-Erro2.addEventListener('click', function() {
+Erro2.addEventListener('click', function () {
       alert("EM BREVE...");
 });
-Erro3.addEventListener('click', function() {
-      Setas(Setaesq,MainMenu);
+Erro3.addEventListener('click', function () {
+      Setas(Setaesq, MainMenu);
 });
-Erro4.addEventListener('click', function() {
+Erro4.addEventListener('click', function () {
       alert("EM BREVE...");
 });
 
 
 /* BOTÃO MAIN MENU */
-MainMenu.addEventListener('click', function() {
-      main(MainMenuOpen,MainMenuOpenFundo,MainMenuColor,MainMenuBTN4On,MainMenuBTN4)
+MainMenu.addEventListener('click', function () {
+      main(MainMenuOpen, MainMenuOpenFundo, MainMenuColor, MainMenuBTN4On, MainMenuBTN4)
 });
 /* BOTÃO IN/OUT */
-btn.addEventListener('click', function() {
-      IfandElse(InOutOpen,InOutColor)
+btn.addEventListener('click', function () {
+      IfandElse(InOutOpen, InOutColor)
 });
 
 /* BOTÃO IN/OUT */
-InfList.addEventListener('click', function() {
-      Inflisten(InfListOpen,InfListColor)
+InfList.addEventListener('click', function () {
+      Inflisten(InfListOpen, InfListColor)
 });
 
 /* BOTÃO CONTROL */
-Control.addEventListener('click', function() {
-      IfandElse(ControlOpen,ControlColor)
+Control.addEventListener('click', function () {
+      IfandElse(ControlOpen, ControlColor)
 });
 
 /* BOTÃO DEVICE */
-Device.addEventListener('click', function() {
-      IfandElse(DeviceOpen,DeviceColor)
+Device.addEventListener('click', function () {
+      IfandElse(DeviceOpen, DeviceColor)
 });
 
 /* BOTÃO MOTION */
-Motion.addEventListener('click', function() {
-      IfandElse(MotionOpen,MotionColor)
+Motion.addEventListener('click', function () {
+      IfandElse(MotionOpen, MotionColor)
 });
 
 /* BOTÃO ARITH */
-Arith.addEventListener('click', function() {
-      IfandElse(ArithOpen,ArithColor)
+Arith.addEventListener('click', function () {
+      IfandElse(ArithOpen, ArithColor)
 });
 
 /* BOTÃO SHIFT */
-Shift.addEventListener('click', function() {
-      IfandElse(ShiftOpen,ShiftColor)
+Shift.addEventListener('click', function () {
+      IfandElse(ShiftOpen, ShiftColor)
 });
 
 /* BOTÃO OTHER */
-Other.addEventListener('click', function() {
-      IfandElse(OtherOpen,OtherColor)
+Other.addEventListener('click', function () {
+      IfandElse(OtherOpen, OtherColor)
 });
 
 // BOTÕES SUPERIOR
 
 /* BOTÃO JOBB */
-Job.addEventListener('click', function() {
-      IfandElse1(JobOpen,JobColor)
+Job.addEventListener('click', function () {
+      IfandElse1(JobOpen, JobColor)
 });
 
 /* BOTÃO EDIT */
-Edit.addEventListener('click', function() {
-      IfandElse1(EditOpen,EditColor)
+Edit.addEventListener('click', function () {
+      IfandElse1(EditOpen, EditColor)
+});
+
+/* BOTÃO JOBB */
+JobMN.addEventListener('click', function () {
+      BtnMain(JobMNOpen, JobMNColor)
+});
+
+createrjob.addEventListener('click', function () {
+      create(CreateOpen)
+});
+
+Cancel.addEventListener('click', function () {
+      create(CreateOpen)
+});
+
+Execute.addEventListener('click', function () {
+      create(CreateOpen)
+      exetando()
 });
 
 
