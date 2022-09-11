@@ -14,6 +14,13 @@ var g = 0; /* não alterar o nome */
 
 var h = 0; /* não alterar o nome */
 
+var x = 0; /* não alterar o nome */
+
+var tela = 0;
+
+var off_tela = 0;
+
+
 // INTERTRAVAMENTO ENTRE OS BOTÕES
 
 var Open;//Botões MAIN MENU
@@ -30,8 +37,6 @@ var ColorMN;//Botões Superior
 // ERRO
 var Erro1 = document.getElementById('erro');
 var Erro2 = document.getElementById('Erro');
-
-var Setaesq = document.getElementById('Slide');
 var Erro3 = document.getElementById('Erro3');
 var Erro4 = document.getElementById('Erro4');
 
@@ -42,7 +47,6 @@ var MainMenuOpenFundo = document.querySelector('.e12_37');
 var MainMenuColor = document.querySelector('.e5_125');
 var MainMenuBTN4On = document.querySelector('.barra-inferior-4btn-on');
 var MainMenuBTN4 = document.querySelector('.barra-inferior-4btn');
-
 
 // INFORM LIST
 
@@ -106,42 +110,59 @@ var JobMN = document.getElementById('btn_job_MN');
 var JobMNOpen = document.querySelector('.btn_job_228_4');
 var JobMNColor = document.querySelector('.e5_133');
 
+var Deljob = document.getElementById('DEL-job');
 var createrjob = document.getElementById('creater-job');
+var createrjob2 = document.getElementById('creater-job2');
 var CreateOpen = document.querySelector('.group_96_229_38');
 var Cancel = document.getElementById('cancel');
 var Execute = document.getElementById('executer');
+var ExeOpen = document.querySelector('.group_105_231_25');
+var ExeFundo = document.querySelector('.rectangle_151_231_2');
+var ExeFundo1 = document.querySelector('.rectangle_152_231_3');
+var ExeBarra = document.querySelector('.rectangle_153_231_20');
+
 //FUNCÕES
 
 function main(varOn, varFundo, varColor, Btn4on, Btn4) {
-      if (varOn.style.display === 'block' && a === 1 && h === 0) {
+      if (varOn.style.display === 'block' && a === 1 && h === 0 && x === 0) {
             varOn.style.display = 'none';
             varFundo.style.display = 'none';
             Btn4.style.display = 'none';
             Btn4on.style.display = 'Block';
             varColor.style.background = 'rgba(104.1249994936052, 103.95144760608673, 103.95144760608673, 1)';
-            if (g === 1) {
-                  BtnMain(OpenMN,ColorMN)
-            }
             a = 0;
+            if (g === 1) {
+                  BtnMain(OpenMN, ColorMN)
+            }
+            else if (tela === 1) {
+                  Exe(ExeOpen)
+            }
+
       } else if (a === 0) {
             varOn.style.display = 'block';
             varFundo.style.display = 'block';
             Btn4.style.display = 'block';
             Btn4on.style.display = 'none';
             varColor.style.background = 'rgba(118.30300390720367, 96.05002999305725, 255, 1)';
-            a = 1
+            a = 1;
+            x = 0;
+            if (tela === 1) {
+                  Exe(ExeOpen)
+            }
       }
 }
 
 function IfandElse(varOn, varColor) {
-
-      if (varOn.style.display === 'block' || b === 1) {
+      if (varOn.style.display === 'block'){
             varOn.style.display = 'none';
             varColor.style.background = 'rgba(104.12499949336052, 103.95144760608673, 103.95144760608673, 1)';
+      }
+      else if ( b === 1) {
+            b = 0;           
             Open.style.display = 'none';
             Color.style.background = 'rgba(104.12499949336052, 103.95144760608673, 103.95144760608673, 1)';
-            b = 0;
-      } else {
+            IfandElse(varOn, varColor)
+      } else if(f === 1){
             varOn.style.display = 'block';
             varColor.style.background = 'rgba(118.30300390720367, 96.05002999305725, 255, 1)';
             b = 1;
@@ -151,13 +172,16 @@ function IfandElse(varOn, varColor) {
 }
 
 function IfandElse1(varOn, varColor) {
-      if (varOn.style.display === 'block' || d === 1) {
+      if (varOn.style.display === 'block'){
             varOn.style.display = 'none';
             varColor.style.background = 'rgba(104.12499949336052, 103.95144760608673, 103.95144760608673, 1)';
+      }
+      else if ( d === 1) {
+            d = 0;           
             OpenSup.style.display = 'none';
             ColorSup.style.background = 'rgba(104.12499949336052, 103.95144760608673, 103.95144760608673, 1)';
-            d = 0;
-      } else if (d === 0) {
+            IfandElse1(varOn, varColor)
+      } else {
             varOn.style.display = 'block';
             varColor.style.background = 'rgba(118.30300390720367, 96.05002999305725, 255, 1)';
             d = 1;
@@ -172,15 +196,17 @@ function Inflisten(varOn, varColor) {
             varOn.style.display = 'none';
             varColor.style.background = 'rgba(104.12499949336052, 103.95144760608673, 103.95144760608673, 1)';
             f = 0;
-      } else {
+            IfandElse(Open, Color)
+      } else if(h === 0){
             varOn.style.display = 'block';
             varColor.style.background = 'rgba(0, 255, 86.69997811317444, 1)';
             f = 1;
+            
       }
 }
 
 function BtnMain(varOn, varColor) {
-      if (varOn.style.display === 'block' || g === 1 ) {
+      if (varOn.style.display === 'block' || g === 1) {
             varOn.style.display = 'none';
             varColor.style.background = 'rgba(104.12499949336052, 103.95144760608673, 103.95144760608673, 1)';
             OpenMN.style.display = 'none';
@@ -195,18 +221,50 @@ function BtnMain(varOn, varColor) {
       }
 }
 
-function create(varOn){
-      if (varOn.style.display === 'block' || h === 1) {
+
+
+function create(varOn) {
+      if (varOn.style.display === 'block' || h === 1 ) {
             varOn.style.display = 'none';
             h = 0;
       }
-      else if (h === 0) {
+      else if (h === 0|| tela === 1)  {
             varOn.style.display = 'block';
             h = 1;
+            Exe(ExeOpen)
             BtnMain(JobMNOpen, JobMNColor)
+            if (f === 1) {
+                  Inflisten(InfListOpen, InfListColor)
+            }
       }
 }
 
+function Exe(varOn) {
+      if (h === 1 || off_tela === 1) {
+            varOn.style.display = 'none';
+            tela = 0;
+            off_tela = 0;
+      }
+      else if (varOn.style.display === 'block' || tela === 1) {
+            if (a === 1) {
+                  varOn.style.left = '334px';
+                  ExeFundo.style.width = '1065px';
+                  ExeFundo1.style.width = '1065px';
+                  ExeBarra.style.width = '1063px';
+            }
+            else if (a === 0) {
+                  varOn.style.left = '50px';
+                  ExeFundo.style.width = '1350px';
+                  ExeFundo1.style.width = '1350px';
+                  ExeBarra.style.width = '1347px';
+            }
+
+      }
+      else if (tela === 0) {
+            varOn.style.display = 'block';
+            tela = 1;
+      }
+}
 
 
 /* BOTÃO EM BREVE... */
@@ -217,8 +275,9 @@ Erro2.addEventListener('click', function () {
       alert("EM BREVE...");
 });
 Erro3.addEventListener('click', function () {
-      Setas(Setaesq, MainMenu);
+      alert("EM BREVE...");
 });
+
 Erro4.addEventListener('click', function () {
       alert("EM BREVE...");
 });
@@ -226,6 +285,7 @@ Erro4.addEventListener('click', function () {
 
 /* BOTÃO MAIN MENU */
 MainMenu.addEventListener('click', function () {
+      x = 0;
       main(MainMenuOpen, MainMenuOpenFundo, MainMenuColor, MainMenuBTN4On, MainMenuBTN4)
 });
 /* BOTÃO IN/OUT */
@@ -285,8 +345,24 @@ JobMN.addEventListener('click', function () {
       BtnMain(JobMNOpen, JobMNColor)
 });
 
+Deljob.addEventListener('click', function () {
+      off_tela = 1;
+      Exe(ExeOpen)
+      IfandElse1(OpenSup,ColorSup)
+      if(h === 1){
+            create(CreateOpen)
+      }
+});
+
 createrjob.addEventListener('click', function () {
       create(CreateOpen)
+});
+
+createrjob2.addEventListener('click', function () {
+      x = 1;
+      main(MainMenuOpen, MainMenuOpenFundo, MainMenuColor, MainMenuBTN4On, MainMenuBTN4)
+      create(CreateOpen)
+      IfandElse1(JobOpen, JobColor)
 });
 
 Cancel.addEventListener('click', function () {
@@ -295,7 +371,7 @@ Cancel.addEventListener('click', function () {
 
 Execute.addEventListener('click', function () {
       create(CreateOpen)
-      exetando()
+      Exe(ExeOpen)
 });
 
 
