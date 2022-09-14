@@ -14,7 +14,12 @@ var g = 0; /* não alterar o nome */
 
 var h = 0; /* não alterar o nome */
 
+var p = 0; /* não alterar o nome */
+
 var x = 0; /* não alterar o nome */
+
+var m = 1; /* não alterar o nome */
+
 
 var tela = 0;
 
@@ -32,6 +37,7 @@ var OpenMN;//Botões Superior
 var ColorMN;//Botões Superior
 
 
+
 // INICIO VAR DOS BOTÕES MAIN MENU
 
 // ERRO
@@ -39,6 +45,13 @@ var Erro1 = document.getElementById('erro');
 var Erro2 = document.getElementById('Erro');
 var Erro3 = document.getElementById('Erro3');
 var Erro4 = document.getElementById('Erro4');
+
+
+var Pendante = document.getElementById('Pendante');
+var PendanteOpen = document.querySelector('.e1_6');
+
+var TelaP = document.getElementById('tela');
+var TelaPOpen = document.querySelector('.e106_1119');
 
 /* BOTÃO MAIN MENU */
 var MainMenu = document.getElementById('btn-MainMenu');
@@ -49,6 +62,10 @@ var MainMenuBTN4On = document.querySelector('.barra-inferior-4btn-on');
 var MainMenuBTN4 = document.querySelector('.barra-inferior-4btn');
 
 // INFORM LIST
+
+var InfList1 = document.getElementById('InformList1');
+var InfList1Open = document.querySelector('.e6_59');
+var InfList1Color = document.querySelector('.e9_275a');
 
 var InfList = document.getElementById('InformList');
 var InfListOpen = document.querySelector('.e6_59');
@@ -133,6 +150,9 @@ function main(varOn, varFundo, varColor, Btn4on, Btn4) {
             a = 0;
             if (g === 1) {
                   BtnMain(OpenMN, ColorMN)
+                  if (tela === 1) {
+                        Exe(ExeOpen)
+                  }
             }
             else if (tela === 1) {
                   Exe(ExeOpen)
@@ -153,16 +173,16 @@ function main(varOn, varFundo, varColor, Btn4on, Btn4) {
 }
 
 function IfandElse(varOn, varColor) {
-      if (varOn.style.display === 'block'){
+      if (varOn.style.display === 'block') {
             varOn.style.display = 'none';
             varColor.style.background = 'rgba(104.12499949336052, 103.95144760608673, 103.95144760608673, 1)';
       }
-      else if ( b === 1) {
-            b = 0;           
+      else if (b === 1) {
+            b = 0;
             Open.style.display = 'none';
             Color.style.background = 'rgba(104.12499949336052, 103.95144760608673, 103.95144760608673, 1)';
             IfandElse(varOn, varColor)
-      } else if(f === 1){
+      } else if (f === 1) {
             varOn.style.display = 'block';
             varColor.style.background = 'rgba(118.30300390720367, 96.05002999305725, 255, 1)';
             b = 1;
@@ -172,12 +192,12 @@ function IfandElse(varOn, varColor) {
 }
 
 function IfandElse1(varOn, varColor) {
-      if (varOn.style.display === 'block'){
+      if (varOn.style.display === 'block') {
             varOn.style.display = 'none';
             varColor.style.background = 'rgba(104.12499949336052, 103.95144760608673, 103.95144760608673, 1)';
       }
-      else if ( d === 1) {
-            d = 0;           
+      else if (d === 1) {
+            d = 0;
             OpenSup.style.display = 'none';
             ColorSup.style.background = 'rgba(104.12499949336052, 103.95144760608673, 103.95144760608673, 1)';
             IfandElse1(varOn, varColor)
@@ -190,18 +210,20 @@ function IfandElse1(varOn, varColor) {
       }
 }
 
-function Inflisten(varOn, varColor) {
+function Inflisten(varOn, varColor, varColor1) {
 
       if (varOn.style.display === 'block' || f === 1) {
             varOn.style.display = 'none';
             varColor.style.background = 'rgba(104.12499949336052, 103.95144760608673, 103.95144760608673, 1)';
+            varColor1.style.background = 'rgba(104.12499949336052, 103.95144760608673, 103.95144760608673, 1)';
             f = 0;
             IfandElse(Open, Color)
-      } else if(h === 0){
+      } else if (h === 0) {
             varOn.style.display = 'block';
             varColor.style.background = 'rgba(0, 255, 86.69997811317444, 1)';
+            varColor1.style.background = 'rgba(0, 255, 86.69997811317444, 1)';
             f = 1;
-            
+
       }
 }
 
@@ -224,17 +246,17 @@ function BtnMain(varOn, varColor) {
 
 
 function create(varOn) {
-      if (varOn.style.display === 'block' || h === 1 ) {
+      if (varOn.style.display === 'block' || h === 1) {
             varOn.style.display = 'none';
             h = 0;
       }
-      else if (h === 0|| tela === 1)  {
+      else if (h === 0 || tela === 1) {
             varOn.style.display = 'block';
             h = 1;
             Exe(ExeOpen)
             BtnMain(JobMNOpen, JobMNColor)
             if (f === 1) {
-                  Inflisten(InfListOpen, InfListColor)
+                  Inflisten(InfListOpen, InfList1Color, InfListColor)
             }
       }
 }
@@ -266,6 +288,23 @@ function Exe(varOn) {
       }
 }
 
+/* BOTÃO CONTROL */
+Pendante.addEventListener('click', function () {
+      if (m === 0) {
+            m = 1;
+            PendanteOpen.style.display = 'block';
+      }
+      else{
+            m = 0;
+            PendanteOpen.style.display = 'none';
+      }
+});
+/* BOTÃO CONTROL */
+TelaP.addEventListener('click', function () {
+      m = 0;
+      PendanteOpen.style.display = 'none';
+});
+
 
 /* BOTÃO EM BREVE... */
 Erro1.addEventListener('click', function () {
@@ -293,9 +332,13 @@ btn.addEventListener('click', function () {
       IfandElse(InOutOpen, InOutColor)
 });
 
-/* BOTÃO IN/OUT */
+/* BOTÃO Inform List*/
 InfList.addEventListener('click', function () {
-      Inflisten(InfListOpen, InfListColor)
+      Inflisten(InfListOpen, InfList1Color, InfListColor)
+});
+
+InfList1.addEventListener('click', function () {
+      Inflisten(InfListOpen, InfList1Color,InfListColor)
 });
 
 /* BOTÃO CONTROL */
@@ -348,8 +391,8 @@ JobMN.addEventListener('click', function () {
 Deljob.addEventListener('click', function () {
       off_tela = 1;
       Exe(ExeOpen)
-      IfandElse1(OpenSup,ColorSup)
-      if(h === 1){
+      IfandElse1(OpenSup, ColorSup)
+      if (h === 1) {
             create(CreateOpen)
       }
 });
