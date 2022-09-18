@@ -1,4 +1,9 @@
-
+.hide{
+	display: none;
+}
+.show{
+	display: block;
+}
 /* INFOS IN OUT */
 
 .infos_220_4 { 

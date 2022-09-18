@@ -1,9 +1,5 @@
 // INFORMAÇÕES SOBRE OS BOTÕES
-
 // DECLARAÇÃO DAS VARIAVEIS
-
-var c = 0; /* não alterar o nome */
-
 
 // INICIO VAR IN/OUT
 

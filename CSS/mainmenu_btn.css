@@ -212,19 +212,7 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* TELA DE CRIAÇÂO JOB */
 
 
 .group_96_229_38 { 
@@ -618,6 +606,130 @@
 	left:47px;
 	top:209px;
 	display: none;
+}
+.job_232_3 { 
+	width:281px;
+	height:92px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.rectangle_140_232_4 { 
+	background-color:rgba(104.12499949336052, 103.95144760608673, 103.95144760608673, 1);
+	width:281px;
+	height:92px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	border-bottom-left-radius:20px;
+	border-bottom-right-radius:20px;
+}
+.ex__memoria_232_5 { 
+	color:rgba(255, 255, 255, 1);
+	width:232px;
+	height:45px;
+	position:absolute;
+	left:25px;
+	top:23px;
+	font-family:Alatsi;
+	text-align:center;
+	font-size:36px;
+	letter-spacing:0;
+}
+.bt_handling_232_6 { 
+	width:281px;
+	height:92px;
+	position:absolute;
+	left:0px;
+	top:101px;
+}
+.group_31_232_7 { 
+	width:281px;
+	height:92px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.rectangle_140_232_8 { 
+	background-color:rgba(104.12499949336052, 103.95144760608673, 103.95144760608673, 1);
+	width:281px;
+	height:92px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	border-bottom-left-radius:20px;
+	border-bottom-right-radius:20px;
+}
+.setup_232_9 { 
+	color:rgba(255, 255, 255, 1);
+	width:145px;
+	height:45px;
+	position:absolute;
+	left:68px;
+	top:26px;
+	font-family:Alatsi;
+	text-align:center;
+	font-size:32px;
+	letter-spacing:0;
+}
+.bt_variable_232_10 { 
+	width:281px;
+	height:94px;
+	position:absolute;
+	left:0px;
+	top:202px;
+}
+.rectangle_138_232_11 { 
+	background-color:rgba(104.12499949336052, 103.95144760608673, 103.95144760608673, 1);
+	width:281px;
+	height:94px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	border-bottom-left-radius:20px;
+	border-bottom-right-radius:20px;
+}
+.display_setup_232_12 { 
+	color:rgba(255, 255, 255, 1);
+	width:214px;
+	height:45px;
+	position:absolute;
+	left:37px;
+	top:24px;
+	font-family:Alatsi;
+	text-align:center;
+	font-size:32px;
+	letter-spacing:0;
+}
+
+
+#nome_programa{
+	font-size:24px;
+	font-family:Alatsi;
+	position: absolute;
+	left: 250px;
+	top: 7px;
+	width: 550px;
+	height: 30px;
+}
+
+
+
+/* MAIN MENU BTN PT2 */
+
+.bt_lt_esquerda_2_232_2 { 
+	width:281px;
+	height:296px;
+	position:absolute;
+	display: none;
+	left:47px;
+	top:209px;
 }
 .job_232_3 { 
 	width:281px;
