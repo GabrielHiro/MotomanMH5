@@ -15,7 +15,7 @@
 
   <script defer src="JS/variaveis.js"></script>
   <script defer src="JS/logicas.js"></script>
-  <script defer src="JS/animate.js"></script>
+  <script defer src="JS/linhas.js"></script>
   <script defer src="JS/infos.js"></script>
 
   <!-- CSS -->
@@ -68,10 +68,13 @@
               <div class=group_101_231_18><span class="control_group__r1_231_8">CONTROL GROUP: R1</span><span
                   class="tool_____231_10">TOOL: **</span></div>
             </div>
-            <div class=group_106_231_26>
-              <div class=group_99_231_16><span class="A0000_231_11">0000</span><span class="nop_231_13">NOP</span></div>
-              <div class=group_98_231_15><span class="A0001_231_12">0001</span><span class="end_231_14">END</span></div>
+            
+            <div class="container1">
+         
             </div>
+
+
+
             <div class=group_104_231_24>
               <div class="rectangle_153_231_20"></div>
               <div class=group_103_231_21><span class="vj_0_78_231_22">VJ=0.78</span><span
@@ -82,66 +85,55 @@
           <div class=e6_59>
             <div class="e5_101"></div><!-- Botoes Lateral esquerda - MAIN MENU -->
             <div class=e6_4>
-              <div class="e5_104"></div>
-              <button id="btn-InOut">
+              <button class="e5_104" id="btn-InOut">
                 <span class="e6_3">IN/OUT</span>
               </button>
             </div>
             <div class=e6_8>
-              <div class="e6_9"></div>
-              <button id="btn-control">
+              <button class="e6_9" id="btn-control">
                 <span class="e6_10">CONTROL</span>
               </button>
             </div>
             <div class=e6_26>
-              <div class="e6_27"></div>
-              <button id="btn-device">
+              <button class="e6_27" id="btn-device">
                 <span class="e6_28">DEVICE</span>
               </button>
             </div>
             <div class=e6_30>
-              <div class="e6_31"></div>
-              <button id="btn-motion">
+              <button class="e6_31" id="btn-motion">
                 <span class="e6_32">MOTION</span>
               </button>
             </div>
             <div class=e6_33>
-              <div class="e6_34"></div>
-              <div class="e6_36"></div>
-              <div class="e6_37"></div>
-              <button id="btn-arith">
+              <button class="e6_37" id="btn-arith">
                 <span class="e6_35">ARITH</span>
               </button>
             </div>
             <div class=e6_38>
               <div class="e6_39"></div>
               <div class="e6_40"></div>
-              <div class="e6_41"></div>
-              <button id="btn-shift">
+              <button class="e6_41" id="btn-shift">
                 <span class="e6_42">SHIFT</span>
               </button>
             </div>
             <div class=e6_43>
               <div class="e6_44"></div>
               <div class="e6_45"></div>
-              <div class="e6_46"></div>
-              <button id="btn-other">
+              <button class="e6_46" id="btn-other">
                 <span class="e6_47">OTHER</span>
               </button>
             </div>
             <div class=e6_48>
               <div class="e6_49"></div>
               <div class="e6_50"></div>
-              <div class="e6_51"></div>
-              <button id="erro">
+              <button class="e6_51" id="erro">
                 <span class="e6_52">SAME</span>
               </button>
             </div>
             <div class=e6_53>
               <div class="e6_54"></div>
               <div class="e6_55"></div>
-              <div class="e6_56"></div>
-              <button id="Erro">
+              <button class="e6_56" id="Erro">
                 <span class="e6_57">PRIOR</span>
               </button>
             </div>
@@ -149,15 +141,12 @@
           <div class=e6_73>
             <div class="e5_134"></div>
             <div class=e6_69>
-
-              <div class="e6_60"></div>
-              <button id="btn_job">
+              <button class="e6_60" id="btn_job">
                 <span class="e6_65">JOB</span>
               </button>
             </div>
             <div class=e6_70>
-              <button id="btn_edit">
-                <div class="e6_61"></div>
+              <button id="btn_edit" class="e6_61">
                 <span class="e6_66">EDIT</span>
               </button>
             </div>
@@ -171,8 +160,8 @@
           <div class="lt-esq">
             <div class=Slide>
               <div class=e8_83>
-                <button id="btn_job_MN">
-                  <div class="e5_133"></div><span class="e6_68">JOB</span>
+                <button id="btn_job_MN" class="e5_133">
+                  <span class="e6_68">JOB</span>
                 </button>
               </div>
               <div class=e12_25>
@@ -208,8 +197,7 @@
             </div>
             <div class=e12_31>
               <!-- BOTAO SETA -->
-              <button id="Seta_D">
-                <div class="e5_126"></div>
+              <button id="Seta_D" class="e5_126">
                 <div class=e105_65>
                   <img id="img1" src="img/pngwing.com (2).png" alt="">
                   <div class="e12_21"></div>
@@ -217,9 +205,8 @@
               </button>
             </div>
             <div class=e12_30>
-              <button id="Seta_E">
-                <!-- BOTAO SETA -->
-                <div class="e5_127"></div>
+              <!-- BOTAO SETA -->
+              <button id="Seta_E" class="e5_127">
                 <div class=e105_64>
                   <img id="img2" src="img/pngwing.com (2).png" alt="">
                 </div>
@@ -241,27 +228,25 @@
             </div>
           </div>
           <div class=e14_4>
-            <div class="e5_125"></div>
-            <button id="btn-MainMenu">
+            <button class="e5_125" id="btn-MainMenu">
               <span class="e12_32">MAIN MENU</span>
             </button>
           </div>
           <div class=e14_3>
-            <div class="e5_124"></div><span class="e12_33">SIMPLE MENU</span>
+            <div class="e5_124"></div>
+            <span class="e12_33">SIMPLE MENU</span>
           </div>
           <div class=e12_35>
             <div class=e5_140>
               <div class=e5_139>
-                <button id="Pendante">
-                  <div class="e5_135"></div>
+                <button id="Pendante" class="e5_135">
                   <span class="e12_34">CONTROLE</span>
                 </button>
               </div>
             </div>
           </div>
           <div class=e10_281>
-            <button id="InformList">
-              <div class="e1_67"></div>
+            <button id="InformList" class="e1_67">
               <span class="e9_268">INFORM</span>
               <span class="e9_274">LIST</span>
               <div class="e9_275"></div>
@@ -278,18 +263,21 @@
               </div>
             </div>
             <div class=btn_3_228_12>
-              <button id="creater-job">
-                <div class="rectangle_138_228_13"></div><span class="create_new_job_228_14">CREATE NEW JOB</span>
+              <button id="creater-job" class="rectangle_138_228_13">
+                <span class="create_new_job_228_14">CREATE NEW JOB</span>
               </button>
             </div>
             <div class=btn_4_228_15>
-              <div class="rectangle_137_228_16"></div><span class="master_job_228_17">MASTER JOB</span>
+              <div class="rectangle_137_228_16"></div>
+              <span class="master_job_228_17">MASTER JOB</span>
             </div>
             <div class=btn_5_228_18>
-              <div class="rectangle_136_228_19"></div><span class="job_capacity_228_20">JOB CAPACITY</span>
+              <div class="rectangle_136_228_19"></div>
+              <span class="job_capacity_228_20">JOB CAPACITY</span>
             </div>
             <div class=btn_6_228_21>
-              <div class="rectangle_135_228_22"></div><span class="cycle_228_23">CYCLE</span>
+              <div class="rectangle_135_228_22"></div>
+              <span class="cycle_228_23">CYCLE</span>
             </div>
           </div>
         </div>
@@ -322,92 +310,116 @@
         <div class=group_30_203_3>
           <div class="rectangle_109_203_4"></div>
           <div class=group_13_203_5>
-            <div class="rectangle_118_203_6"></div><span class="comment_203_7">COMMENT</span>
+            <div class="rectangle_118_203_6"></div>
+            <span class="comment_203_7">COMMENT</span>
           </div>
           <div class=group_14_203_8>
-            <div class="rectangle_118_203_9"></div><span class="ret_203_10">RET</span>
+            <div class="rectangle_118_203_9"></div>
+            <span class="ret_203_10">RET</span>
           </div>
           <div class=group_15_203_11>
-            <div class="rectangle_118_203_12"></div><span class="nop_203_13">NOP</span>
+            <div class="rectangle_118_203_12"></div>
+            <span class="nop_203_13">NOP</span>
           </div>
           <div class=group_16_203_26>
-            <div class="rectangle_118_203_27"></div><span class="pause_203_28">PAUSE</span>
+            <div class="rectangle_118_203_27"></div>
+            <span class="pause_203_28">PAUSE</span>
           </div>
           <div class=group_8_203_14>
-            <div class="rectangle_112_203_15"></div><span class="jump_203_16">JUMP</span>
+            <div class="rectangle_112_203_15"></div>
+            <span class="jump_203_16">JUMP</span>
           </div>
           <div class=group_9_203_17>
-            <div class="rectangle_118_203_18"></div><span class="call_203_19">CALL</span>
+            <div class="rectangle_118_203_18"></div>
+            <span class="call_203_19">CALL</span>
           </div>
           <div class=group_11_203_20>
-            <div class="rectangle_118_203_21"></div><span class="timer_203_22">TIMER</span>
+            <div class="rectangle_118_203_21"></div>
+            <span class="timer_203_22">TIMER</span>
           </div>
           <div class=group_12_203_23>
-            <div class="rectangle_118_203_24"></div><span class="label_203_25">LABEL</span>
+            <div class="rectangle_118_203_24"></div>
+            <span class="label_203_25">LABEL</span>
           </div>
           <div class=group_17_203_55>
-            <div class="rectangle_118_203_56"></div><span class="advstop_203_57">ADVSTOP</span>
+            <div class="rectangle_118_203_56"></div>
+            <span class="advstop_203_57">ADVSTOP</span>
           </div>
           <div class=group_18_203_58>
-            <div class="rectangle_112_203_59"></div><span class="cwait_203_60">CWAIT</span>
+            <div class="rectangle_112_203_59"></div>
+            <span class="cwait_203_60">CWAIT</span>
           </div>
           <div class=group_19_203_61>
-            <div class="rectangle_118_203_62"></div><span class="msg_203_63">MSG</span>
+            <div class="rectangle_118_203_62"></div>
+            <span class="msg_203_63">MSG</span>
           </div>
           <div class=group_20_203_64>
-            <div class="rectangle_118_203_65"></div><span class="input_203_66">INPUT</span>
+            <div class="rectangle_118_203_65"></div>
+            <span class="input_203_66">INPUT</span>
           </div>
           <div class=group_21_203_67>
-            <div class="rectangle_118_203_68"></div><span class="advinit_203_69">ADVINIT</span>
+            <div class="rectangle_118_203_68"></div>
+            <span class="advinit_203_69">ADVINIT</span>
           </div>
         </div>
         <!-- BOTÃO DEVICE -->
         <div class=group_90_204_111>
           <div class="rectangle_109_204_112"></div>
           <div class=group_8_204_122>
-            <div class="rectangle_112_204_123"></div><span class="wvon_204_124">WVON</span>
+            <div class="rectangle_112_204_123"></div>
+            <span class="wvon_204_124">WVON</span>
           </div>
           <div class=group_9_204_125>
-            <div class="rectangle_118_204_126"></div><span class="wvof_204_127">WVOF</span>
+            <div class="rectangle_118_204_126"></div>
+            <span class="wvof_204_127">WVOF</span>
           </div>
           <div class=group_11_204_128>
-            <div class="rectangle_118_204_129"></div><span class="toolon_204_130">TOOLON</span>
+            <div class="rectangle_118_204_129"></div>
+            <span class="toolon_204_130">TOOLON</span>
           </div>
           <div class=group_12_204_131>
-            <div class="rectangle_118_204_132"></div><span class="toolof_204_133">TOOLOF</span>
+            <div class="rectangle_118_204_132"></div>
+            <span class="toolof_204_133">TOOLOF</span>
           </div>
         </div>
         <!-- BOTÃO MOTION -->
         <div class=group_92_211_2>
           <div class="rectangle_108_211_3"></div>
           <div class=group_10_211_7>
-            <div class="rectangle_118_211_8"></div><span class="movj_211_9">MOVJ</span>
+            <div class="rectangle_118_211_8"></div>
+            <span class="movj_211_9">MOVJ</span>
           </div>
           <div class=group_16_211_10>
-            <div class="rectangle_118_211_11"></div><span class="movl_211_12">MOVL</span>
+            <div class="rectangle_118_211_11"></div>
+            <span class="movl_211_12">MOVL</span>
           </div>
           <div class=group_17_211_13>
-            <div class="rectangle_118_211_14"></div><span class="movc_211_15">MOVC</span>
+            <div class="rectangle_118_211_14"></div>
+            <span class="movc_211_15">MOVC</span>
           </div>
           <div class=group_18_211_16>
             <div class="rectangle_118_211_17"></div>
             <div class="rectangle_119_211_18"></div>
-            <div class="rectangle_120_211_19"></div><span class="movs_211_20">MOVS</span>
+            <div class="rectangle_120_211_19"></div>
+            <span class="movs_211_20">MOVS</span>
           </div>
           <div class=group_19_211_21>
             <div class="rectangle_118_211_22"></div>
             <div class="rectangle_119_211_23"></div>
-            <div class="rectangle_120_211_24"></div><span class="imov_211_25">IMOV</span>
+            <div class="rectangle_120_211_24"></div>
+            <span class="imov_211_25">IMOV</span>
           </div>
           <div class=group_20_211_26>
             <div class="rectangle_118_211_27"></div>
             <div class="rectangle_119_211_28"></div>
-            <div class="rectangle_120_211_29"></div><span class="speed_211_30">SPEED</span>
+            <div class="rectangle_120_211_29"></div>
+            <span class="speed_211_30">SPEED</span>
           </div>
           <div class=group_21_211_31>
             <div class="rectangle_118_211_32"></div>
             <div class="rectangle_119_211_33"></div>
-            <div class="rectangle_120_211_34"></div><span class="refp_211_35">REFP</span>
+            <div class="rectangle_120_211_34"></div>
+            <span class="refp_211_35">REFP</span>
           </div>
         </div>
 
@@ -416,70 +428,92 @@
         <div class=bt_arith_205_148>
           <div class="rectangle_109_205_149"></div>
           <div class=group_8_205_159>
-            <div class="rectangle_112_205_160"></div><span class="setfile_205_161">SETFILE</span>
+            <div class="rectangle_112_205_160"></div>
+            <span class="setfile_205_161">SETFILE</span>
           </div>
           <div class=group_9_205_162>
-            <div class="rectangle_118_205_163"></div><span class="getfile_205_164">GETFILE</span>
+            <div class="rectangle_118_205_163"></div>
+            <span class="getfile_205_164">GETFILE</span>
           </div>
           <div class=group_11_205_165>
-            <div class="rectangle_118_205_166"></div><span class="setreg_205_167">SETREG</span>
+            <div class="rectangle_118_205_166"></div>
+            <span class="setreg_205_167">SETREG</span>
           </div>
           <div class=group_12_205_168>
-            <div class="rectangle_118_205_169"></div><span class="getreg_205_170">GETREG</span>
+            <div class="rectangle_118_205_169"></div>
+            <span class="getreg_205_170">GETREG</span>
           </div>
           <div class=group_17_206_5>
-            <div class="rectangle_118_206_6"></div><span class="xor_206_7">XOR</span>
+            <div class="rectangle_118_206_6"></div>
+            <span class="xor_206_7">XOR</span>
           </div>
           <div class=group_18_206_8>
-            <div class="rectangle_118_206_9"></div><span class="mframe_206_10">MFRAME</span>
+            <div class="rectangle_118_206_9"></div>
+            <span class="mframe_206_10">MFRAME</span>
           </div>
           <div class=group_19_206_11>
-            <div class="rectangle_118_206_12"></div><span class="sete_206_13">SETE</span>
+            <div class="rectangle_118_206_12"></div>
+            <span class="sete_206_13">SETE</span>
           </div>
           <div class=group_20_206_14>
-            <div class="rectangle_118_206_15"></div><span class="gete_206_16">GETE</span>
+            <div class="rectangle_118_206_15"></div>
+            <span class="gete_206_16">GETE</span>
           </div>
           <div class=group_21_206_17>
-            <div class="rectangle_112_206_18"></div><span class="cnvrt_206_19">CNVRT</span>
+            <div class="rectangle_112_206_18"></div>
+            <span class="cnvrt_206_19">CNVRT</span>
           </div>
           <div class=group_22_206_20>
-            <div class="rectangle_118_206_21"></div><span class="and_206_22">AND</span>
+            <div class="rectangle_118_206_21"></div>
+            <span class="and_206_22">AND</span>
           </div>
           <div class=group_23_206_23>
-            <div class="rectangle_118_206_24"></div><span class="or_206_25">OR</span>
+            <div class="rectangle_118_206_24"></div>
+            <span class="or_206_25">OR</span>
           </div>
           <div class=group_24_206_26>
-            <div class="rectangle_118_206_27"></div><span class="not_206_28">NOT</span>
+            <div class="rectangle_118_206_27"></div>
+            <span class="not_206_28">NOT</span>
           </div>
           <div class=group_41_206_269>
-            <div class="rectangle_118_206_270"></div><span class="add_206_271">ADD</span>
+            <div class="rectangle_118_206_270"></div>
+            <span class="add_206_271">ADD</span>
           </div>
           <div class=group_42_206_272>
-            <div class="rectangle_118_206_273"></div><span class="sub_206_274">SUB</span>
+            <div class="rectangle_118_206_273"></div>
+            <span class="sub_206_274">SUB</span>
           </div>
           <div class=group_43_206_275>
-            <div class="rectangle_118_206_276"></div><span class="mul_206_277">MUL</span>
+            <div class="rectangle_118_206_276"></div>
+            <span class="mul_206_277">MUL</span>
           </div>
           <div class=group_44_206_278>
-            <div class="rectangle_118_206_279"></div><span class="div_206_280">DIV</span>
+            <div class="rectangle_118_206_279"></div>
+            <span class="div_206_280">DIV</span>
           </div>
           <div class=group_45_206_281>
-            <div class="rectangle_112_206_282"></div><span class="clear_206_283">CLEAR</span>
+            <div class="rectangle_112_206_282"></div>
+            <span class="clear_206_283">CLEAR</span>
           </div>
           <div class=group_46_206_284>
-            <div class="rectangle_118_206_285"></div><span class="inc_206_286">INC</span>
+            <div class="rectangle_118_206_285"></div>
+            <span class="inc_206_286">INC</span>
           </div>
           <div class=group_47_206_287>
-            <div class="rectangle_118_206_288"></div><span class="dec_206_289">DEC</span>
+            <div class="rectangle_118_206_288"></div>
+            <span class="dec_206_289">DEC</span>
           </div>
           <div class=group_48_206_290>
-            <div class="rectangle_118_206_291"></div><span class="set_206_292">SET</span>
+            <div class="rectangle_118_206_291"></div>
+            <span class="set_206_292">SET</span>
           </div>
           <div class=group_25_206_29>
-            <div class="rectangle_118_206_30"></div><span class="atan_206_31">ATAN</span>
+            <div class="rectangle_118_206_30"></div>
+            <span class="atan_206_31">ATAN</span>
           </div>
           <div class=group_26_206_32>
-            <div class="rectangle_118_206_33"></div><span class="mulmat_206_34">MULMAT</span>
+            <div class="rectangle_118_206_33"></div>
+            <span class="mulmat_206_34">MULMAT</span>
           </div>
           <div class=group_27_206_35>
             <div class="rectangle_118_206_36"></div><span class="invmat_206_37">INVMAT</span>
@@ -582,8 +616,7 @@
             <div class="rectangle_118_218_30"></div><span class="copy_job_218_31">COPY JOB</span>
           </div>
           <div class=group_14_218_32>
-            <button id="DEL-job">
-              <div class="rectangle_118_218_33"></div>
+            <button id="DEL-job" class="rectangle_118_218_33">
               <span class="delete_job_218_34">DELETE JOB</span>
             </button>
           </div>
@@ -594,8 +627,7 @@
             <div class="rectangle_118_218_42"></div><span class="call_master_job_218_43">CALL MASTER JOB</span>
           </div>
           <div class=group_11_218_44>
-            <button id="creater-job2">
-              <div class="rectangle_118_218_45"></div>
+            <button id="creater-job2" class="rectangle_118_218_45">
               <span class="create_new_job_218_46">CREATE NEW JOB</span>
             </button>
           </div>
@@ -664,7 +696,7 @@
           <div class="rectangle_149_229_35"></div>
           <div class="rectangle_150_229_36"></div>
 
-          <button type="submit" id="executer">
+          <button id="executer">
             <span class="execute_229_37">EXECUTE</span>
           </button>
           <button id="cancel">
@@ -885,14 +917,13 @@
           <div class="e1_81"></div><span class="e9_272">MOTION</span><span class="e10_276">TYPE</span>
         </div>
         <div class=e10_28a>
-          <button id="InformList1">
-            <div class="e1_67a"></div><span class="e9_268a">INFORM</span><span class="e9_274a">LIST</span>
+          <button id="InformList1" class="e1_67a">
+            <span class="e9_268a">INFORM</span>
+            <span class="e9_274a">LIST</span>
             <div class="e9_275a"></div>
           </button>
         </div>
-        <button id="tela">
-          <div class="e11_3"></div>
-
+        <button onclick="teste()" id="tela" class="e11_3">
         </button>
       </div>
     </div>

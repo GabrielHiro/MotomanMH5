@@ -1,3 +1,13 @@
+.container1{
+	position:absolute;
+	top: 145px;
+	left: 30px;
+	font-family: Alatsi;
+	text-align: center;
+	font-size: 24px;
+	letter-spacing: 0;
+
+}
 .barra-inferior-4btn{
     left:34px;
 	top:824px;

@@ -1,4 +1,3 @@
-
 //FUNCÕES
 
 function main(varOn, varFundo, varColor, Btn4on, Btn4) {
@@ -33,12 +32,12 @@ function main(varOn, varFundo, varColor, Btn4on, Btn4) {
       }
 }
 
-function MNslide(varOn,varOff) {
-            varOn.style.display = 'block';
-            varOff.style.display = 'none';
-            if (g === 1) {
-                  BtnMain(JobMNOpen, JobMNColor)
-            }
+function MNslide(varOn, varOff) {
+      varOn.style.display = 'block';
+      varOff.style.display = 'none';
+      if (g === 1) {
+            BtnMain(JobMNOpen, JobMNColor)
+      }
 }
 
 
@@ -171,7 +170,7 @@ Pendante.addEventListener('click', function () {
             PendanteOpen.classList.add('show');
             PendanteOpen.classList.remove('hide');
       }
-      else{
+      else {
             PendanteOpen.classList.add('hide');
             PendanteOpen.classList.remove('show');
       }
@@ -204,14 +203,14 @@ MainMenu.addEventListener('click', function () {
 /* BOTÃO MAIN MENU - SETAS */
 
 Seta_D.addEventListener('click', function () {
-      if(j === 0){ 
+      if (j === 0) {
             MNslide(MNslOpen, MNslOpen2)
             j = 1;
       }
 });
 
 Seta_E.addEventListener('click', function () {
-      if(j === 1){ 
+      if (j === 1) {
             MNslide(MNslOpen2, MNslOpen)
             j = 0;
       }
@@ -228,7 +227,7 @@ InfList.addEventListener('click', function () {
 });
 
 InfList1.addEventListener('click', function () {
-      Inflisten(InfListOpen, InfList1Color,InfListColor)
+      Inflisten(InfListOpen, InfList1Color, InfListColor)
 });
 
 /* BOTÃO CONTROL */
@@ -305,7 +304,6 @@ Cancel.addEventListener('click', function () {
 Execute.addEventListener('click', function () {
       create(CreateOpen)
       Exe(ExeOpen)
-      altera_nome.innerHTML = input_nome;
 });
 
 
