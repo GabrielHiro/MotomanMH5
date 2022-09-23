@@ -12,13 +12,23 @@
 		/* Coloca o zoom em 65% */
 }
 
-button {
+button{
 	cursor: pointer;
 	border: none;
 	box-shadow: 1px 0.5px  rgba(0, 0, 0, 0.461);
+	color: rgba(255, 255, 255, 1);
+	position: absolute;
+	font-family: Alatsi;
+	text-align: center;
+	font-size: 36px;
+	letter-spacing: 0;
 }
 button:active{
 	box-shadow: inset 1px 0.5px  rgba(28, 28, 28, 0.509);
+}
+button:disabled{
+	color: rgb(185, 185, 185);
+	cursor: default;
 }
 
 .e106_1118 {
@@ -571,6 +581,15 @@ button:active{
 	border-top-right-radius: 10px;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
+
+	color: rgba(255, 255, 255, 1);
+
+	position: absolute;
+
+	font-family: Alatsi;
+	text-align: center;
+	font-size: 36px;
+	letter-spacing: 0;
 }
 
 .e6_65 {
@@ -605,6 +624,8 @@ button:active{
 	border-top-right-radius: 10px;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
+
+
 }
 
 .e6_66 {

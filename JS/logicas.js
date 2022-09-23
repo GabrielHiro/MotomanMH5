@@ -70,7 +70,7 @@ function IfandElse1(varOn, varColor) {
             OpenSup.style.display = 'none';
             ColorSup.style.background = 'rgba(104.12499949336052, 103.95144760608673, 103.95144760608673, 1)';
             IfandElse1(varOn, varColor)
-      } else {
+      } else if( tela === 1 ) {
             varOn.style.display = 'block';
             varColor.style.background = 'rgba(118.30300390720367, 96.05002999305725, 255, 1)';
             d = 1;
@@ -121,11 +121,12 @@ function create(varOn) {
       }
       else if (h === 0 || tela === 1) {
             varOn.style.display = 'block';
-
-            AnimationEffect
             h = 1;
             Exe(ExeOpen)
             BtnMain(JobMNOpen, JobMNColor)
+            if( d === 1){
+                  IfandElse1(OpenSup,ColorSup)
+            }
             if (f === 1) {
                   Inflisten(InfListOpen, InfList1Color, InfListColor)
             }
@@ -135,6 +136,8 @@ function create(varOn) {
 function Exe(varOn) {
       if (h === 1 || off_tela === 1) {
             varOn.style.display = 'none';
+            Job.setAttribute("disabled","disabled")
+            Edit.setAttribute("disabled","disabled")
             tela = 0;
             off_tela = 0;
       }
@@ -156,6 +159,8 @@ function Exe(varOn) {
       else if (tela === 0) {
             varOn.style.display = 'block';
             tela = 1;
+            Job.removeAttribute("disabled")
+            Edit.removeAttribute("disabled")
       }
 }
 
@@ -278,9 +283,10 @@ JobMN.addEventListener('click', function () {
 });
 
 Deljob.addEventListener('click', function () {
+      tela = 0;
       off_tela = 1;
       Exe(ExeOpen)
-      IfandElse1(OpenSup, ColorSup)
+      IfandElse1(JobOpen, JobColor)
       if (h === 1) {
             create(CreateOpen)
       }
@@ -288,13 +294,20 @@ Deljob.addEventListener('click', function () {
 
 createrjob.addEventListener('click', function () {
       create(CreateOpen)
+      if( tela === 1 && off_tela === 1){
+            IfandElse1(OpenSup, ColorSup)
+      }
+      tela = 0;
 });
 
 createrjob2.addEventListener('click', function () {
       x = 1;
       main(MainMenuOpen, MainMenuOpenFundo, MainMenuColor, MainMenuBTN4On, MainMenuBTN4)
       create(CreateOpen)
-      IfandElse1(JobOpen, JobColor)
+      if(tela === 1){
+            IfandElse1(OpenSup, ColorSup)
+      }
+      tela = 0;
 });
 
 Cancel.addEventListener('click', function () {
