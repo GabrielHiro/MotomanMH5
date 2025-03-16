@@ -1,0 +1,11 @@
+
+/* Common rectangle styles */
+.rectangle_common {
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	border-bottom-left-radius:20px;
+	border-bottom-right-radius:20px;
+}
+
+/* Example usage for repeated classes (merge them as needed) */
+/* .rectangle_140, .rectangle_141, etc. can extend .rectangle_common */

@@ -1,3 +1,4 @@
+/* @import url("shared.css"); */
 .container1{
 	position:absolute;
 	top: 145px;
@@ -50,10 +51,6 @@
 	top:824px;
 }
 
-
-
-
-
 .e5_119-b { 
 	background-color:rgba(104.12499949336052, 103.95144760608673, 103.95144760608673, 1);
 	width:335px;
@@ -87,8 +84,6 @@
 	top:824px;
 }
 
-
-
 .e10_281 { 
 	width:15px;
 	height:80px;
@@ -110,7 +105,6 @@
 	border-bottom-left-radius:5px;
 	border-bottom-right-radius:5px;
 }
-
 
 .e9_268 { 
 	color:rgba(0, 0, 0, 1);
